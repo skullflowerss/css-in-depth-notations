@@ -1,135 +1,102 @@
-body{
-    font-family: sans-serif;
-    font-size: 16px;
+/* 
+:root{
+    font-size: 0.75em;
 }
 
-.slogan{
-    font-size: 1.2em;
-    padding: 1.2em;
-    background-color: #ccc;
-}
-
-ul{
-    font-size: .8em;
-}
-
-ul ul{
-    font-size: 1em;
-}
-    
-    /* 0,0,1 */
-h1{
-    color: #2f4f4f;
-    margin-bottom: 10px;
-}
-
-.title{
-    font: 32px Helvetica, Arial, sans-serif;
-}
-
-    /* 1,0,0 */
-#main-nav{
-    margin-top: 10px;
-    list-style: none;
-    padding-left: 0;
-}
-
-
-    /* First way of doing it */
-/* #main-nav li{
-    display: inline-block;
-}
-
-#main-nav a{
-    color: white;
-    background-color: #13a4a4;
-    padding: 5px;
-    border-radius: 2px;
-    text-decoration: none;
-}
-
-#main-nav .featured{
-    background-color: orange;
-} */
-
-    /* 0,1,0 */
-.nav {
-    margin-top: 10px;
-    list-style: none;
-    padding-left: 0;
-}
-
-    /* 0,1,1 */
-.nav li{
-    display: inline-block;
-}
-
-    /* 0,1,1 */
-.nav a{
-    color: white;
-    background-color: #13a4a4;
-    padding: 5px 15px;
-    border-radius: 2px;
-    text-decoration: none;
-}
-
-.nav .featured{
-    background-color: orange;
-    box-shadow: 10px 2px #6f9090;
-}
-
-/* third fix */
-    /* 0,2,0 */
-/* .nav .featured{
-    background-color: orange;
-} */
-
-a.featured{
-    background-color: orange;
-}
-
-a:link{
-    color: blue;
-    text-decoration: none;
-}
-
-a:visited{
-    color: purple;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-a:active{
-    color: red;
-}
-
-.footer{
-    color: #666;
-    background-color: #ccc;
-    padding: 15px;
-    text-align: center;
-    font-size: 14px;
-}
-
-/* Inherits the color of the .footer */
-.footer a{
-    /* color: inherit; */
-    color: initial;
-    text-decoration: underline;
-}
-
-.box{
+/* .panel{
     padding: 1em;
-    border-radius: 1em;
-    background-color: lightgray;
+    border-radius: 0.5em;
+    border: 1px solid #999;
 }
 
-.box-small{
-    font-size: 12px;
+.panel > h2{
+    margin-top: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
+
+/* .panel.large{
+    font-size: 1.2rem;
+} */
+
+/* @media (min-width: 800px){
+    :root{
+        font-size: 0.875em;
+    }
 }
 
-.box-large{
-    font-size: 18px;
+@media (min-width: 1200px) {
+    :root{
+        font-size: 1em;
+    }
+    
+}   */
+
+/* .square{
+    width: 90vmin;
+    height: 90vmin;
+    background-color: #369;
+} */
+
+/* :root{
+    font-size: calc(18px + 1vw);
+    --main-font: Helvetica, Arial, snas-serif;
+    --brand-color: #369;
+} */
+
+ /* .panel{
+    font-size: 1rem;
+    padding: 1em;
+    border: 1px solid #999;
+    border-radius: 0.5em;
+}
+
+.panel > h2{
+    margin-top: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body{
+    line-height: 1.2em;
+}
+
+p{
+    font-family: var(--main-font, sans-serif);
+    color: var(--brand-color, blue);
+}
+
+.about-us{
+    font-size: 2em;
+} */
+
+:root{
+    --main-bg: #fff;
+    --main-color: #000;
+}
+
+.panel{
+    font-size: 1rem;
+    padding: 1em;
+    border: 1px solid #999;
+    border-radius: 0.5em;
+    background-color: var(--main-bg);
+    color: var(--main-color)
+}
+
+.panel >h2{
+    margin-top: 0;
+    font-size. 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dark{
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #999;
+    --main-bg: #333;
+    --main-color:#fff;
 }
