@@ -1,102 +1,45 @@
-/* 
 :root{
-    font-size: 0.75em;
+    box-sizing: border-box;
 }
 
-/* .panel{
-    padding: 1em;
-    border-radius: 0.5em;
-    border: 1px solid #999;
+*,
+::before,
+::after{
+    box-sizing: inherit;
 }
 
-.panel > h2{
-    margin-top: 0;
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-} */
-
-/* .panel.large{
-    font-size: 1.2rem;
-} */
-
-/* @media (min-width: 800px){
-    :root{
-        font-size: 0.875em;
-    }
-}
-
-@media (min-width: 1200px) {
-    :root{
-        font-size: 1em;
-    }
-    
-}   */
-
-/* .square{
-    width: 90vmin;
-    height: 90vmin;
-    background-color: #369;
-} */
-
-/* :root{
-    font-size: calc(18px + 1vw);
-    --main-font: Helvetica, Arial, snas-serif;
-    --brand-color: #369;
-} */
-
- /* .panel{
-    font-size: 1rem;
-    padding: 1em;
-    border: 1px solid #999;
-    border-radius: 0.5em;
-}
-
-.panel > h2{
-    margin-top: 0;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 body{
-    line-height: 1.2em;
+    background-color: #eee;
+ font-family: Helvetica, Arial, sans-serif;
+
 }
 
-p{
-    font-family: var(--main-font, sans-serif);
-    color: var(--brand-color, blue);
+header{
+    color: #fff;
+ background-color: #0072b0;
+ border-radius: .5em;
+
 }
 
-.about-us{
-    font-size: 2em;
-} */
-
-:root{
-    --main-bg: #fff;
-    --main-color: #000;
+main{
+    display: block;
 }
 
-.panel{
-    font-size: 1rem;
-    padding: 1em;
-    border: 1px solid #999;
-    border-radius: 0.5em;
-    background-color: var(--main-bg);
-    color: var(--main-color)
+.main{
+    box-sizing: border-box;
+ float: left;
+ width: 70%;
+ background-color: #fff;
+ border-radius: .5em;
 }
 
-.panel >h2{
-    margin-top: 0;
-    font-size. 0.8em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.dark{
-    margin-top: 2em;
-    padding: 1em;
-    background-color: #999;
-    --main-bg: #333;
-    --main-color:#fff;
+.sidebar{
+    box-sizing: border-box;
+    float: left;
+    width: calc(30% - 1.5em);
+    margin-left: 1.5em;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: .5em;
 }
