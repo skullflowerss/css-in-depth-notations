@@ -9,6 +9,10 @@
 }
 
 
+body * + *{
+    margin-top: 1.5em;
+}
+
 body{
     background-color: #eee;
  font-family: Helvetica, Arial, sans-serif;
@@ -16,11 +20,10 @@ body{
 }
 
 header{
+    padding: 1em 1.5em;
     color: #fff;
  background-color: #0072b0;
  border-radius: .5em;
-    padding-top: 4em;
-    padding-bottom: 4em;
 }
 
 main{
@@ -42,6 +45,7 @@ main{
 .main{
 /* display: table-cell; */
  width: 70%;
+ padding: 1em 1.5em;
  background-color: #fff;
  border-radius: .5em;
 }
@@ -49,8 +53,30 @@ main{
 .sidebar{
     /* display: table-cell; */
     width: 30%;
-    margin-left: 1.5em;
     padding: 1.5em;
+    margin-top: 0;
+    margin-left: 1.5em;
     background-color: #fff;
     border-radius: .5em;
+}
+
+.button-link{
+    display:block;
+    padding:0.5em;
+    color:#fff;
+    background-color: #0090c9;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button-link + .button-link{
+    margin-top: 1.5em;
+}
+
+.sponsor-link{
+    display: block;
+    color:#0072b0;
+    font-weight: bold;
+    text-decoration: none;
 }
